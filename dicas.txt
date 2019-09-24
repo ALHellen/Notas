@@ -1,0 +1,7 @@
+git add *
+git commit -m "nome da alteração"
+git push -u origin master (seu push)
+git init
+git retome add origin [caminho do meu repositório]
+git clone [caminho do contribuidor]
+git config --list [info do user logado]...
