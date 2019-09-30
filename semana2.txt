@@ -1,0 +1,183 @@
+let resultadoJogo = prompt("Seu time ganhou, empatou ou perdeu? ");
+switch (resultadoJogo){
+   case "ganhou":
+     alert("Seu time ganhou 3 pontos.");
+     break;
+   case "empatou":
+     alert("Seu time ganhou 1 ponto.");
+     break;
+   case "perdeu":
+     alert("Seu time não pontuou :/");
+     break;
+   default:
+    alert("Desculpe, a opção " + resultadoJogo + " é inválida. Tente de novo com as palavras 'ganho', 'empatou' ou 'perdeu'.<br>");
+ }
+alert("Até mais!");
+
+-----------------------------------------------------------------------
+
+// let resultadoJogo = prompt("Seu time ganhou, empatou ou perdeu? ");
+
+// if(resultadoJogo == "ganhou" || resultadoJogo == "empatou" || resultadoJogo == "perdeu"){
+// if(resultadoJogo == "ganhou"){
+//   alert("Seu time fez 3 pontos.");
+// }
+// else if(resultadoJogo == "empatou"){
+//   alert("Seu time fez 1 ponto.");
+// }
+// else{
+//   alert("Seu time não pontuou :/");
+//  }
+// }
+// else{
+//   alert("Opção inválida. Digite se seu time ganhou, empatou ou perdeu dessa forma.");
+// }
+
+----------------------------------------------------------------------------
+
+let nome = prompt('Digite seu nome');
+
+
+let nome1 = nome.substring(0,10);
+let letras = nome.substring(10,0);
+
+if(nome1 == letras){
+  console.log('O nome ' +nome+ ' é palindromo.');
+}
+else{
+  console.log('O nome ' +nome+ ' não é palindromo.');
+}
+
+------------------------------------------------------------------------
+
+let numero = prompt('Digite um número: ');
+
+  if(numero%2 == 0){
+    alert('O número ' + numero + ' é par.');
+  } 
+  else{
+    alert('O número ' + numero + ' é impar.');
+  }
+
+---------------------------------------------------------------------------
+
+let recebeAngulo = prompt('Digite o angulo');
+
+function angulo(recebeAngulo){
+
+  if(recebeAngulo < 90){
+    alert('Angulo agudo');
+  } 
+  else if(recebeAngulo == 90){
+    alert('Angulo reto');
+  }
+  else if(recebeAngulo > 90 && recebeAngulo < 180){
+    alert('Angulo obtuso');
+  }
+  else if(recebeAngulo == 0 || recebeAngulo == 180){
+    alert('Angulo raso');
+  }
+   else if(recebeAngulo > 180 && recebeAngulo < 360){
+    alert('Angulo côncavo');
+  }
+  else{
+    alert('Angulo completa');
+  }
+  return;
+}   
+
+angulo(recebeAngulo);
+
+---------------------------------------------------------------------------
+
+let produto = prompt('Digite o código do produto: ');
+
+if(produto == 1){
+  alert('Alimento não-perecível');
+}
+else if (produto == 2 || produto == 3 || produto == 4){
+  alert('Alimento perecível');
+}
+else if (produto == 5 || produto == 6 ){
+  alert('Vestuário');
+}
+else if (produto == 7){
+  alert('Higiene Pessoal');
+}
+else if (produto >= 8 && produto <= 15 ){
+  alert('Limpeza e Utensílios Domésticos');
+}
+else{
+  alert('Código inválido');
+}
+
+---------------------------------------------------------------------------
+
+let codigo = prompt('Digite o código do produto: ');
+let quantidade = prompt('Digite quantos itens desse produto você levará: ');
+let resultado;
+
+if(codigo == 100){
+  resultado = quantidade*(1.70);
+  alert('Você escolheu ' + quantidade + ' Cachorro(s) quente(s). Total R$' +resultado);
+}
+else if(codigo == 101){
+  resultado = quantidade*(2.30);
+  alert('Você escolheu ' + quantidade + ' Bauru(s) simples. Total R$' +resultado);
+}
+else if(codigo == 102){
+  resultado = quantidade*(2.60);
+   alert('Você escolheu ' + quantidade + ' Bauru(s) com ovo. Total R$' +resultado);
+}
+else if(codigo == 103){
+  resultado = quantidade*(2.40);
+   alert('Você escolheu ' + quantidade + ' Hamburguer(s). Total R$' +resultado);
+}
+else if(codigo == 104){
+  resultado = quantidade*(2.50);
+   alert('Você escolheu ' + quantidade + ' Cheeseburguer(s). Total R$' +resultado);
+}
+else if(codigo == 105){
+  resultado = quantidade*(1);
+   alert('Você escolheu ' + quantidade + ' Refrigerante(s). Total R$' +resultado);
+}
+else{
+  alert('Código inválido.');
+}
+
+---------------------------------------------------------------------------
+
+let codigo = prompt('Digite o código do produto: ');
+let quantidade = prompt('Digite quantos itens desse produto você levará: ');
+let resultado;
+
+switch(codigo){
+  case '100':
+    resultado = quantidade*(2.30); 
+    alert('Você escolheu ' + quantidade + ' Cachorro(s) quente(s). Total R$' +resultado);
+    break;
+  case '101':
+    resultado = quantidade*(2.60);
+    alert('Você escolheu ' + quantidade + ' Bauru(s) com ovo. Total R$' +resultado);
+    break;
+  case '102':
+    resultado = quantidade*(2.60);
+   alert('Você escolheu ' + quantidade + ' Bauru(s) com ovo. Total R$' +resultado);
+    break;
+    case '103':
+    resultado = quantidade*(2.40);
+    alert('Você escolheu ' + quantidade + ' Hamburguer(s). Total R$' +resultado);
+    break;
+  case '104':
+    resultado = quantidade*(2.50);
+    alert('Você escolheu ' + quantidade + ' Cheeseburguer(s). Total R$' +resultado);
+    break;
+  case '105':
+    resultado = quantidade*(1);
+    alert('Você escolheu ' + quantidade + ' Refrigerante(s). Total R$' +resultado);
+    break;
+  default:
+    alert("Código inválido");
+}
+
+--------------------------------------------------------------------------
